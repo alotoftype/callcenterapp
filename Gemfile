@@ -13,9 +13,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
-
-gem 'bootstrap-sass', '~> 3.3.5'
+gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.1.0'
+end
 #paperclip gem
 gem "paperclip", "~> 4.3"
 #awesome print Gem
@@ -23,7 +24,9 @@ gem 'awesome_print'
 # gem for devise
 gem 'devise'
 #active admin
-#gem 'activeadmin', github: 'activeadmin'
+gem 'activeadmin', github: 'activeadmin'
+# simple form 
+gem 'simple_form'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

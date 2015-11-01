@@ -1,0 +1,11 @@
+<div class="row">
+<h1>MedicalOffices#index</h1>
+<p>Find me in app/views/medical_offices/index.html.erb</p>
+
+<%@specialties.each do |s| %>
+ <ul>
+ <li><%=s.name %></li>
+ </ul>
+ <% end %>
+</div>
+<%= link_to("New Medical Office", new_medical_office_path) %> 
